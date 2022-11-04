@@ -8,7 +8,7 @@
     <title>Oh my food</title>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--ajout lien fontawesome police-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/8f9725c6e5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stylesOhmyfood.css">
@@ -17,7 +17,7 @@
 <body>
 
     <header>
-        <div class="header__logo"><img src="Images/ohmyfood.png" alt="logo Ohmyfood">
+        <div class="header__logo"><img src="Images/ohmyfood.png" alt="logo Oh my food">
         </div>
         <HR>
     </header>
@@ -32,15 +32,15 @@
             </div>
             
             <div class="searching__exploration">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p class="subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <h1 class="first-page">Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button class="exploration__button">
                     Explorez nos restaurants
                 </button>
             </div>
 
             <div class="searching__functioning>">
-                <h1>Fonctionnement</h1>
+                <h1 class="first-page">Fonctionnement</h1>
                 
                 <div class="functionning__stage">
                     <div class="stage__number">
@@ -82,7 +82,7 @@
         </section>
         
         <section class="resto">
-            <h1>Restaurants</h1>
+            <h1 class="first-page">Restaurants</h1>
             
             <article class="resto__card">
                 <a href="menu-La-palette-du-gout.html">
@@ -93,7 +93,7 @@
                 <div class="card__text">
                     <div class="card__text__name">
                         <h3>La palette du goût</h3>
-                        <p class="location">Ménilmontant</p>
+                        <p>Ménilmontant</p>
                     </div>
                     <i class="fa-thin fa-heart"></i>
                 </div>
@@ -109,7 +109,7 @@
                 <div class="card__text">
                     <div class="card__text__name">
                         <h3>La note enchantée</h3>
-                        <p class="location">Charonne</p>
+                        <p>Charonne</p>
                     </div>
                     <i class="fa-thin fa-heart"></i>
                 </div>
@@ -125,7 +125,7 @@
                 <div class="card__text">
                     <div class="card__text__name">
                         <h3>À la française</h3>
-                        <p class="location">Cité rouge</p>
+                        <p>Cité rouge</p>
                     </div>
                     <i class="fa-thin fa-heart"></i>
                 </div>
@@ -141,7 +141,7 @@
                 <div class="card__text">
                     <div class="card__text__name">
                         <h3>Le délice des sens</h3>
-                        <p class="location">Folie-Méricourt</p>
+                        <p>Folie-Méricourt</p>
                     </div>
                     <i class="fa-thin fa-heart"></i>
                 </div>
@@ -159,7 +159,12 @@
             <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
             <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
-            <li>Contact</li><!--créer un envoi sur mail-->
+            <li>
+                <form method="post" action="#">
+                    Contact
+                    <input type="email" name="contact"/>
+                </form>
+            </li>
         </ul>
     </footer>
 
