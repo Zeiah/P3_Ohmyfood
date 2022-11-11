@@ -1,0 +1,17 @@
+/* header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        &__logo>img {
+            max-width: 65%;
+             margin: auto;
+        }
+    }
+}
+
+

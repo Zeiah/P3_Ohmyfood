@@ -1,0 +1,20 @@
+.searching {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.searching__bar {
+    margin: auto;
+    display: inline-flex;
+    align-items: baseline;
+    font-size: 18px;
+    padding:25px;
+    /*background-color: $color-background--darken;*/
+    &__bar>i {
+        padding-right: 15px;
+    }
+}
+
