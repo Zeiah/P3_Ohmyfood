@@ -1,9 +1,23 @@
 {
-  "name": "sass-Ohmyfood",
+  "name": "sass",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {"sass":"sass --watch ./sass/main.scss:npm./css/styles.css"},
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss ./css/style.css"
+  },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zeiah/P3_Ohmyfood.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Zeiah/P3_Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Zeiah/P3_Ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
 }

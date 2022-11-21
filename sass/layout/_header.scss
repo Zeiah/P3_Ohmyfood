@@ -1,0 +1,27 @@
+/* header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: salmon;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        &__logo>img {
+            max-width: 65%;
+             margin: auto;
+        }
+    }
+}
+
+hr {
+    /*$color-background: #DCDC;*/
+    border: none;
+    border-bottom: 3px solid #DCDC;
+    height: 3px;
+    color: #DCDC;
+    }
+    
+
+
