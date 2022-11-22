@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: $color-font;
+    color: white;
+    padding: 20px;
+    
+    .footer__logo>img {
+        color: white;
+    }
+    ul {
+        list-style: none;
+        font-size: 21px;
+    }
+}

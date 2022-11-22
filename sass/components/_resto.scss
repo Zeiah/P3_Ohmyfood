@@ -1,0 +1,39 @@
+.resto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 20px; 
+
+    .resto__card {
+        position: relative;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        justify-content: center;
+        box-shadow: 3px solid $color-background;
+        border-radius: 15px;
+        overflow: hidden;
+
+        .card__img {
+            height:240px;
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            object-fit: cover;
+        }
+
+        .card__text {
+            position: absolute;
+            bottom: 0;
+            left:0;
+            right:0;
+            background-color: white ;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+    }
+}

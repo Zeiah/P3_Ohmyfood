@@ -2,13 +2,14 @@
 
 header {
     display: flex;
-    flex-direction: row;
-    background-color: salmon;
-    &__logo {
+    
+    .header__logo {
         display: flex;
         justify-content: center;
+        margin: auto;
         padding: 25px;
-        &__logo>img {
+        
+        &>img {
             max-width: 65%;
              margin: auto;
         }
@@ -16,7 +17,6 @@ header {
 }
 
 hr {
-    /*$color-background: #DCDC;*/
     border: none;
     border-bottom: 3px solid #DCDC;
     height: 3px;
