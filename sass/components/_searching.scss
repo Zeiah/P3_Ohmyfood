@@ -14,7 +14,7 @@
     background-color: $color-background;
     margin-bottom: 50px;
 
-    &>i {
+    i {
         padding-right: 15px;
     }
  }
@@ -27,13 +27,13 @@
     column-gap: 20px;
     padding: 20px;
          
-    &>p {
+    p {
         color: $color-font--lighten;
         font-size: 21px;
         margin: 0;
     }
         
-    &>button {
+    .exploration__button {
         width:70%;
         color: white;
         font-weight: bold;
@@ -62,8 +62,9 @@
         box-shadow: 3px 3px 3px $color-background;
         border-radius: 50px;
         font-size: 21px;
+    
 
-    .stage__number {
+        .stage__number {
             background-color: $color-primary;
             padding: 5px 10px ;
             color: white;

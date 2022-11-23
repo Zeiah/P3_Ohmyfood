@@ -1,17 +1,19 @@
+@import url();
+
 * {box-sizing: border-box;}
+
 body {
     max-width: 720px;
     font-family:'Roboto', sans-serif;
 }
 
 .name {
-    font-family: 'Shrikhand';
+    font-family: 'Shrikhand', sans-serif;
 } 
 
 a {
     text-decoration: none;
     cursor: pointer;
-    color: black
 }
 
 h1 {
