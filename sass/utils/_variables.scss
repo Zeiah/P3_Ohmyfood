@@ -1,15 +1,29 @@
 $color-primary :#9356DC;
 
 $color-secondary: #FF79DA;
-$color-secondary--darken: darken ($color-secondary, 10%); 
+$color-secondary-darken: darken ($color-secondary, 10%); 
 
 $color-tertiary: #99E2D0;
-$color-tertiary--darken: darken ($color-tertiary, 20%);
+$color-tertiary-darken: darken ($color-tertiary, 20%);
 
-$color-background: rgb(239, 236, 239);
-$color-background--darken: darken ($color-background, 20%);
+/*color-background: black
+$color-background: #0000;
+$color-background--light: lighten ($color-background, 20%); >> gris foncé
+$color-background--light-strong: lighten ($color-background, 75%); >>gris clair */
 
-$color-font: rgb(76,71,71);
-$color-font--lighten: lighten ($color-font, 20%);
+/*color-font :black
+$color-font: #0000;
+$color-font--light: lighten ($color-font, 20%); >> gris foncé 
+$color-font--light-strong: lighten ($color-font, 50%); >> gris clair*/
 
-$box-shadow: 0px 0px 30px rgb(76, 71, 71);
+
+/* couleur fond */
+$color-background-dark:#4e4e4e;
+$color-background-light: #f4f0f0;
+
+/* couleur police */
+$color-font-dark:#4e4e4e;
+$color-font-light:#6c6c6c ;
+
+
+$box-shadow: 3px 3px 3px $color-background-dark;

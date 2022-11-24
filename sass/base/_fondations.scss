@@ -7,13 +7,12 @@ body {
     font-family:'Roboto', sans-serif;
 }
 
-.name {
-    font-family: 'Shrikhand', sans-serif;
-} 
+
 
 a {
     text-decoration: none;
     cursor: pointer;
+    color: black;
 }
 
 h1 {
@@ -23,14 +22,13 @@ h1 {
 }
 
 h3 {
-    color:black;
     font-size: 22px;
     font-weight: bold;
     margin: 5px 0;
 }
 
 p {
-    color:$color-font;
+    color:$color-font-light;
     font-size: 21px;
     margin: 0;
 }

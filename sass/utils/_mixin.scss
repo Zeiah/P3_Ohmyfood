@@ -1,14 +1,2 @@
-/* changement couleur lien*/
-@color-font (color: black;
-) {
-    @if (lightness (background-color) >25%){
-        color: black;
-    }
 
-    @else (lightness (background-color) <25%) {
-        color: white;
-    }
-    
-
-}
  

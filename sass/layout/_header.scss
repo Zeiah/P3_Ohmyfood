@@ -2,12 +2,13 @@
 
 header {
     display: flex;
+    flex-wrap: wrap;
     
     .header__logo {
         display: flex;
         justify-content: center;
         margin: auto;
-        padding: 25px;
+        padding: 20px 0;
         
         &>img {
             max-width: 65%;
@@ -17,10 +18,11 @@ header {
 }
 
 hr {
+    display: flex;
+    flex: 0 0 100%;
     border: none;
-    border-bottom: 3px solid #DCDC;
-    height: 3px;
-    color: #DCDC;
+    border-bottom: 2px solid #a3a3a3;
+    margin: 0;
     }
     
 
