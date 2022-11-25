@@ -4,7 +4,7 @@ $color-secondary: #FF79DA;
 $color-secondary-darken: darken ($color-secondary, 10%); 
 
 $color-tertiary: #99E2D0;
-$color-tertiary-darken: darken ($color-tertiary, 20%);
+$color-tertiary-darken: darken ($color-tertiary, 5%);
 
 /*color-background: black
 $color-background: #0000;
@@ -26,4 +26,4 @@ $color-font-dark:#4e4e4e;
 $color-font-light:#6c6c6c ;
 
 
-$box-shadow: 3px 3px 3px $color-background-dark;
+$box-shadow: 3px 3px 3px $color-background-light;

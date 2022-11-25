@@ -29,10 +29,15 @@
     align-items: center;
     gap: 25px;
     
-    h1, p {
+    h1, .subtitle {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        font-weight:lighter;   
     }
         
     .exploration__button {
@@ -49,16 +54,16 @@
 
 .searching__functioning {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content:space-between;
-    column-gap: 25px;
+    gap: 50px;
     padding:20px;
 
     .functioning__stage {
         display: flex;
-        align-items: baseline;
+        align-items:center;
         justify-content: flex-start;
-        padding: 15px;
+        padding: 30px;
         position: relative;
         box-shadow: $box-shadow;
         border-radius: 50px;
@@ -67,6 +72,7 @@
 
         .stage__number {
             background-color: $color-primary;
+            font-size: 21px;
             padding: 5px 10px ;
             color: white;
             border-radius: 50px;

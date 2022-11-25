@@ -5,6 +5,7 @@
 body {
     max-width: 720px;
     font-family:'Roboto', sans-serif;
+    position: relative;
 }
 
 
@@ -16,19 +17,27 @@ a {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     margin: 0;
 }
 
+h2 {
+    font-size: 25px ;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
 h3 {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: normal;
     margin: 5px 0;
 }
 
 p {
-    color:$color-font-light;
     font-size: 21px;
+    font-weight: lighter;
     margin: 0;
 }

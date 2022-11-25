@@ -2,8 +2,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: $color-background-dark;
+    
+    /*position:absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;*/
+
     padding: 20px 0;
+
+    background-color: $color-background-dark;
     font-size: 21px;
     color : white;
 

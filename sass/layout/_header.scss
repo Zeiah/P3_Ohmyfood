@@ -2,8 +2,18 @@
 
 header {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     
+    .return { 
+        background-color: white;
+        border: none;
+        padding-left: 30px;
+        a {
+            color: $color-font-dark;
+        }
+    }
+
     .header__logo {
         display: flex;
         justify-content: center;
