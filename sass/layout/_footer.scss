@@ -1,12 +1,11 @@
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     
-    /*position:absolute;
+    position:absolute;
     bottom: 0;
     right: 0;
-    left: 0;*/
+    left: 0;
 
     padding: 20px 0;
 
@@ -29,11 +28,13 @@ footer {
                 color: white;
             }
         }
+
         li:nth-child(1) {
             i {
                 padding-right:17px;
             }
-        }  
+        } 
+
         li:nth-child(2){
             i {
                 padding-right : 10px;

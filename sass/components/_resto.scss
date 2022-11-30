@@ -11,7 +11,7 @@
 
     .resto__card {
         position: relative;
-        height: 300px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         column-gap: 20px;
@@ -21,13 +21,13 @@
         overflow: hidden;
 
         .card__img {
-            height:240px;
+            display: flex;
             position: absolute;
-            top:0;
+            top:0px;
             left:0;
             right:0;
-            object-fit: cover;
             z-index: 0;
+            
             p {
                 position: absolute;
                 top : 20px;
@@ -39,6 +39,17 @@
                 border-radius: 5px;
                 padding: 15px;  
             }
+            
+            img {
+                aspect-ratio: 1/1;
+                flex-shrink: 0;
+                flex-grow: 1;
+                flex-basis:25%;
+                object-fit: cover;
+                object-position: 50% 50%;
+                width: 100%;
+                height: 300px;
+            }
         }
 
         .card__text {
@@ -49,7 +60,7 @@
             background-color: white ;
             display: flex;
             justify-content: space-between;
-            padding: 10px;
+            padding: 20px;
         }
     }
 }

@@ -3,12 +3,14 @@ main {
 }
 
 .banner {
-    height: 400px;
+    
     overflow: hidden;
     position:relative;
     
     img {
         object-fit: cover; 
+        height: 400px;
+        width: 100%;
     }
 }
 
@@ -57,13 +59,16 @@ main {
 
             .items__description {
                 width: 90%;
+                p{
+                    font-size: 22px;
+                }
             }
             .items__price {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
 
-                font-size: 21px;
+                font-size: 20px;
                 font-weight: bold ;
                 color: $color-font-dark;
             }
@@ -73,6 +78,8 @@ main {
             flex:2;
         }*/
     }
-        
+    .btn {
+        align-self: center;
+    }    
     }
 

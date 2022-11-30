@@ -1,20 +1,11 @@
-@charset "UTF-8";
-/*color-background: black
-$color-background: #0000;
-$color-background--light: lighten ($color-background, 20%); >> gris foncé
-$color-background--light-strong: lighten ($color-background, 75%); >>gris clair */
-/*color-font :black
-$color-font: #0000;
-$color-font--light: lighten ($color-font, 20%); >> gris foncé 
-$color-font--light-strong: lighten ($color-font, 50%); >> gris clair*/
 /* couleur fond */
 /* couleur police */
-@import url();
 * {
   box-sizing: border-box;
 }
 
 body {
+  min-width: 260px;
   max-width: 720px;
   font-family: "Roboto", sans-serif;
   position: relative;
@@ -41,7 +32,7 @@ h2 {
 
 h3 {
   font-size: 25px;
-  font-weight: normal;
+  font-weight: bold;
   margin: 5px 0;
 }
 
@@ -89,7 +80,6 @@ hr {
   flex-direction: column;
   justify-content: space-around;
   gap: 50px;
-  padding-left: 20px;
 }
 
 .searching__bar {
@@ -119,18 +109,8 @@ hr {
   align-items: center;
 }
 .searching__exploration .subtitle {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: lighter;
-}
-.searching__exploration .exploration__button {
-  width: 70%;
-  color: white;
-  font-weight: bold;
-  font-size: 21px;
-  background-color: #FF79DA;
-  border-radius: 50px;
-  padding: 15px;
-  border: none;
 }
 
 .searching__functioning {
@@ -152,7 +132,7 @@ hr {
 }
 .searching__functioning .functioning__stage .stage__number {
   background-color: #9356DC;
-  font-size: 21px;
+  font-size: 15px;
   padding: 5px 10px;
   color: white;
   border-radius: 50px;
@@ -164,7 +144,11 @@ hr {
   position: absolute;
   left: 50px;
 }
+.searching__functioning .functioning__stage .stage__icone:hover {
+  color: #9356DC;
+}
 .searching__functioning .functioning__stage .stage__instruction {
+  color: #4e4e4e;
   position: absolute;
   left: 100px;
   font-weight: bold;
@@ -182,7 +166,7 @@ hr {
 }
 .resto .resto__card {
   position: relative;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   column-gap: 20px;
@@ -192,12 +176,11 @@ hr {
   overflow: hidden;
 }
 .resto .resto__card .card__img {
-  height: 240px;
+  display: flex;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   right: 0;
-  object-fit: cover;
   z-index: 0;
 }
 .resto .resto__card .card__img p {
@@ -211,6 +194,16 @@ hr {
   border-radius: 5px;
   padding: 15px;
 }
+.resto .resto__card .card__img img {
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 25%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 300px;
+}
 .resto .resto__card .card__text {
   position: absolute;
   bottom: 0;
@@ -219,7 +212,17 @@ hr {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
+}
+
+.btn {
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  background-color: #FF79DA;
+  border-radius: 50px;
+  padding: 20px 50px;
+  border: none;
 }
 
 main {
@@ -227,12 +230,13 @@ main {
 }
 
 .banner {
-  height: 400px;
   overflow: hidden;
   position: relative;
 }
 .banner img {
   object-fit: cover;
+  height: 400px;
+  width: 100%;
 }
 
 .menu {
@@ -279,23 +283,28 @@ main {
 .menu .menu__entrees .items .items__description, .menu .menu__plats .items .items__description, .menu .menu__desserts .items .items__description {
   width: 90%;
 }
+.menu .menu__entrees .items .items__description p, .menu .menu__plats .items .items__description p, .menu .menu__desserts .items .items__description p {
+  font-size: 22px;
+}
 .menu .menu__entrees .items .items__price, .menu .menu__plats .items .items__price, .menu .menu__desserts .items .items__price {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: bold;
   color: #4e4e4e;
+}
+.menu .btn {
+  align-self: center;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  /*position:absolute;
+  position: absolute;
   bottom: 0;
   right: 0;
-  left: 0;*/
+  left: 0;
   padding: 20px 0;
   background-color: #4e4e4e;
   font-size: 21px;
@@ -325,11 +334,10 @@ footer ul li:nth-child(2) i {
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  /*position:absolute;
+  position: absolute;
   bottom: 0;
   right: 0;
-  left: 0;*/
+  left: 0;
   padding: 20px 0;
   background-color: #4e4e4e;
   font-size: 21px;
