@@ -1,3 +1,4 @@
+/* couleur bouton*/
 /* couleur fond */
 /* couleur police */
 * {
@@ -8,7 +9,6 @@ body {
   min-width: 260px;
   max-width: 720px;
   font-family: "Roboto", sans-serif;
-  position: relative;
 }
 
 a {
@@ -18,7 +18,7 @@ a {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 33px;
   font-weight: bold;
   margin: 0;
 }
@@ -31,13 +31,13 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 21px;
   font-weight: bold;
   margin: 5px 0;
 }
 
 p {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: lighter;
   margin: 0;
 }
@@ -60,78 +60,77 @@ header .header__logo {
   display: flex;
   justify-content: center;
   margin: auto;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 header .header__logo > img {
-  max-width: 65%;
+  width: 70%;
   margin: auto;
+  padding-left: 15%;
 }
 
 hr {
   display: flex;
   flex: 0 0 100%;
   border: none;
-  border-bottom: 2px solid #a3a3a3;
+  border-bottom: 3px solid #e0e0e0;
   margin: 0;
 }
 
 .searching {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 50px;
 }
-
-.searching__bar {
+.searching .searching__bar {
   display: inline-flex;
   justify-content: center;
   align-items: flex-end;
-  background-color: #f4f0f0;
-  padding: 20px 0;
+  background-color: #f2f2f2;
+  padding: 30px 0;
 }
-.searching__bar i {
+.searching .searching__bar i {
   padding: 15px;
 }
-.searching__bar i, .searching__bar p {
+.searching .searching__bar i, .searching .searching__bar p {
   color: #4e4e4e;
   font-weight: bold;
 }
-
-.searching__exploration {
+.searching .searching__exploration {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
+  background-color: #fcfcfc;
+  padding: 50px 0;
 }
-.searching__exploration h1, .searching__exploration .subtitle {
+.searching .searching__exploration h1, .searching .searching__exploration .subtitle {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.searching__exploration .subtitle {
-  font-size: 25px;
+.searching .searching__exploration .subtitle {
+  font-size: 23px;
   font-weight: lighter;
 }
 
-.searching__functioning {
+.functioning {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
-  padding: 20px;
+  padding: 50px 20px;
 }
-.searching__functioning .functioning__stage {
+.functioning .functioning__stage {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 30px;
+  padding: 40px;
   position: relative;
-  box-shadow: 3px 3px 3px #f4f0f0;
+  box-shadow: 3px 3px 3px #f2f2f2;
   border-radius: 50px;
   font-size: 21px;
 }
-.searching__functioning .functioning__stage .stage__number {
-  background-color: #9356DC;
+.functioning .functioning__stage .stage__number {
+  background-image: linear-gradient(#bc95e9 30%, #FF79DA);
   font-size: 15px;
   padding: 5px 10px;
   color: white;
@@ -139,19 +138,18 @@ hr {
   position: absolute;
   left: -5px;
 }
-.searching__functioning .functioning__stage .stage__icone {
+.functioning .functioning__stage .stage__icone {
   color: #6c6c6c;
   position: absolute;
   left: 50px;
 }
-.searching__functioning .functioning__stage .stage__icone:hover {
+.functioning .functioning__stage .stage__icone:hover {
   color: #9356DC;
 }
-.searching__functioning .functioning__stage .stage__instruction {
-  color: #4e4e4e;
+.functioning .functioning__stage .stage__instruction {
   position: absolute;
   left: 100px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .resto {
@@ -166,12 +164,12 @@ hr {
 }
 .resto .resto__card {
   position: relative;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   column-gap: 20px;
   justify-content: center;
-  box-shadow: 3px 3px 3px #f4f0f0;
+  box-shadow: 3px 3px 3px #f2f2f2;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -188,21 +186,17 @@ hr {
   top: 20px;
   right: 20px;
   z-index: 1;
-  background-color: #99E2D0;
-  color: #37c09e;
+  background-color: #99e2c1;
+  color: rgba(5, 185, 149, 0.862745098);
   font-weight: bold;
   border-radius: 5px;
-  padding: 15px;
+  padding: 10px 15px;
 }
 .resto .resto__card .card__img img {
-  aspect-ratio: 1/1;
-  flex-shrink: 0;
-  flex-grow: 1;
-  flex-basis: 25%;
   object-fit: cover;
   object-position: 50% 50%;
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 .resto .resto__card .card__text {
   position: absolute;
@@ -212,26 +206,23 @@ hr {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: baseline;
+  padding: 15px;
 }
 
 .btn {
   color: white;
   font-weight: bold;
   font-size: 21px;
-  background-color: #FF79DA;
+  background-image: linear-gradient(#FF79DA 30%, #bc95e9);
   border-radius: 50px;
-  padding: 20px 50px;
+  padding: 20px 30px;
+  margin: 25px 0;
   border: none;
-}
-
-main {
-  position: relative;
 }
 
 .banner {
   overflow: hidden;
-  position: relative;
 }
 .banner img {
   object-fit: cover;
@@ -270,14 +261,14 @@ main {
   display: flex;
   flex: 0 0 100%;
   border: none;
-  border-bottom: 5px solid #99E2D0;
+  border-bottom: 5px solid #99e2c1;
   margin: 0;
 }
 .menu .menu__entrees .items, .menu .menu__plats .items, .menu .menu__desserts .items {
   width: 100%;
   display: flex;
   border-radius: 30px;
-  box-shadow: 3px 3px 3px #f4f0f0;
+  box-shadow: 3px 3px 3px #f2f2f2;
   padding: 20px;
 }
 .menu .menu__entrees .items .items__description, .menu .menu__plats .items .items__description, .menu .menu__desserts .items .items__description {
@@ -301,43 +292,6 @@ main {
 footer {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 20px 0;
-  background-color: #4e4e4e;
-  font-size: 21px;
-  color: white;
-}
-footer .logo {
-  font-family: "Shrikhand";
-  padding-left: 20px;
-}
-footer ul {
-  list-style: none;
-  padding-left: 20px;
-}
-footer ul li {
-  padding-bottom: 5px;
-}
-footer ul li a {
-  color: white;
-}
-footer ul li:nth-child(1) i {
-  padding-right: 17px;
-}
-footer ul li:nth-child(2) i {
-  padding-right: 10px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
   padding: 20px 0;
   background-color: #4e4e4e;
   font-size: 21px;

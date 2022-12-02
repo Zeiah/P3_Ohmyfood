@@ -1,0 +1,44 @@
+.functioning {
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap: 50px;
+    padding: 50px 20px;
+
+    .functioning__stage {
+        display: flex;
+        align-items:center;
+        justify-content: flex-start;
+        padding: 40px;
+        position: relative;
+        box-shadow: $box-shadow;
+        border-radius: 50px;
+        font-size: 21px;
+    
+
+        .stage__number {
+            background-image: $background-radient-primary;
+            font-size: 15px;
+            padding: 5px 10px ;
+            color: white;
+            border-radius: 50px;
+            position: absolute;
+            left: -5px;
+        }
+        
+        .stage__icone {
+            color:$color-font-light;
+            position: absolute;
+            left: 50px;
+            &:hover {
+                color:$color-primary;
+            }
+        }
+        
+        .stage__instruction {
+            position: absolute;
+            left: 100px;
+            font-weight: normal;
+        }    
+    }
+}

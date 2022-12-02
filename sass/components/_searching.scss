@@ -1,88 +1,42 @@
 .searching {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 50px;
-}
 
-.searching__bar {
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: $color-background-light;
-    padding: 20px 0;
+    .searching__bar {
+        display: inline-flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: $color-background-light;
+        padding: 30px 0;
 
-    i {
-        padding: 15px;
-    }
+        i {
+            padding: 15px;
+        }
 
-    i, p {
-        color: $color-font-dark;
-        font-weight: bold;
-    }
- }
+        i, p {
+            color: $color-font-dark;
+            font-weight: bold;
+        }
+     }
 
-.searching__exploration {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    
-    h1, .subtitle {
-        display: flex;
+    .searching__exploration {
+        display:flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .subtitle {
-        font-size: 25px;
-        font-weight:lighter;   
-    }
-}
-
-.searching__functioning {
-    display: flex;
-    flex-direction:column;
-    justify-content:space-between;
-    gap: 50px;
-    padding:20px;
-
-    .functioning__stage {
-        display: flex;
-        align-items:center;
-        justify-content: flex-start;
-        padding: 30px;
-        position: relative;
-        box-shadow: $box-shadow;
-        border-radius: 50px;
-        font-size: 21px;
+        gap: 25px;
+        background-color: $color-background-so-light;
+        padding: 50px 0;
     
+        h1, .subtitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-        .stage__number {
-            background-color: $color-primary;
-            font-size: 15px;
-            padding: 5px 10px ;
-            color: white;
-            border-radius: 50px;
-            position: absolute;
-            left: -5px;
+        .subtitle {
+            font-size: 23px;
+            font-weight:lighter;   
         }
-        
-        .stage__icone {
-            color:$color-font-light;
-            position: absolute;
-            left: 50px;
-            &:hover {
-                color:$color-primary;
-            }
-        }
-        
-        .stage__instruction {
-            color:$color-font-dark;
-            position: absolute;
-            left: 100px;
-            font-weight: bold;
-        }    
     }
 }
 

@@ -1,10 +1,18 @@
 $color-primary :#9356DC;
+$color-primary-lighten : lighten($color-primary, 15%);
 $color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+$color-tertiary: #99e2c1;
+$color-tertiary-font: #05b995dc;
+
+/* couleur bouton*/
+$background-radient-secondary: linear-gradient($color-secondary 30%, $color-primary-lighten);
+$background-radient-primary: linear-gradient($color-primary-lighten 30%, $color-secondary);
 
 /* couleur fond */
 $color-background-dark:#4e4e4e;
-$color-background-light: #f4f0f0;
+$color-background-light: #f2f2f2;
+$color-background-so-light: lighten($color-background-light, 4%);
+$color-hr: darken($color-background-light, 7%);
 
 /* couleur police */
 $color-font-dark:#4e4e4e;
