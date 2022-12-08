@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    padding: 100px 20px;
+    padding: 50px 20px 70px 20px;
+    background-color: $color-background-so-light;
     
     h1 {
         padding-bottom: 10px;
@@ -63,33 +64,9 @@
             .card__text__name {
                 flex:2;
             }
-            
-            .card__text__heart {
-                align-self: flex-end;
-                position: relative;
-                padding: 20px 30px 30px;
-                
-                &:hover {
-                    .heart--full {
-                        opacity: 1;
-                    }
-                }   
 
-                .heart--full { 
-                    position: absolute;
-                    top: 20px;
-                    right: 30px;
-                    bottom: 30px;
-                    z-index: 0;
-                    
-                    color: $background-radient-secondary;
-                    opacity: 0;
-                    transition: opacity 10ms ease-in;
-                    
-                }
-
-                
- 
+            .favorite {
+                padding: 10px 50px 50px 0; 
             }
         }
     }

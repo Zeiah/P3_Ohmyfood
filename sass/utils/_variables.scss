@@ -1,12 +1,13 @@
 $color-primary :#9356DC;
 $color-primary-lighten : lighten($color-primary, 15%);
+$color-primary-so-light: lighten($color-primary, 37%);
 $color-secondary: #FF79DA;
-$color-tertiary: #99e2c1;
-$color-tertiary-font: #05b995dc;
+$color-tertiary: #99e1cf;
+$color-tertiary-font: #06a37c;
 
 /* couleur bouton*/
-$background-radient-secondary: linear-gradient($color-secondary 30%, $color-primary-lighten);
-$background-radient-primary: linear-gradient($color-primary-lighten 30%, $color-secondary);
+$background-radient-secondary: linear-gradient($color-secondary 35%, $color-primary-lighten);
+$color-heart: linear-gradient(0deg, $color-primary, $color-secondary);
 
 /* couleur fond */
 $color-background-dark:#4e4e4e;

@@ -1,0 +1,23 @@
+.favorite {
+    position: relative;
+    background: transparent;
+
+    div i {
+        position: absolute;
+        &:hover {
+            opacity: 0;
+        } 
+    }
+
+    .full {
+        opacity: 0;
+        
+        &:hover {
+            opacity: 1;
+            background: $color-heart;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.35s;
+        }
+    }
+}
