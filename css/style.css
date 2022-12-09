@@ -17,7 +17,7 @@ a {
   color: black;
 }
 
-/* font */
+/* FONT-SIZE */
 h1 {
   font-size: 25px;
   font-weight: bold;
@@ -44,7 +44,8 @@ h2 {
 h3 {
   font-size: 19px;
   font-weight: bold;
-  margin: 5px 0;
+  margin: 0;
+  padding-bottom: 7px;
 }
 
 p {
@@ -56,6 +57,10 @@ p {
 .stage__instruction, .btn, .searching__bar > span {
   font-size: 19px;
   font-weight: bold;
+}
+
+footer {
+  font-size: 19px;
 }
 
 /* header*/
@@ -114,7 +119,7 @@ hr {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  background-color: #fcfcfc;
+  background-color: #fbfbfb;
   padding: 50px 0;
 }
 .searching .searching__exploration h1, .searching .searching__exploration .subtitle {
@@ -138,7 +143,7 @@ hr {
   position: relative;
   box-shadow: 3px 3px 3px #f2f2f2;
   border-radius: 50px;
-  background-color: #fcfcfc;
+  background-color: #fbfbfb;
 }
 .functioning .functioning__stage .stage__number {
   background: #9356DC;
@@ -171,7 +176,7 @@ hr {
   justify-content: space-between;
   gap: 20px;
   padding: 50px 20px 70px 20px;
-  background-color: #fcfcfc;
+  background-color: #fbfbfb;
 }
 .resto h1 {
   padding-bottom: 10px;
@@ -258,8 +263,10 @@ hr {
 .favorite .full:hover {
   opacity: 1;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /*-webkit-background-clip: text;*/
+  color: transparent;
+  /*-webkit-text-fill-color: transparent;*/
   transition: all 0.35s;
 }
 
@@ -274,28 +281,25 @@ hr {
   flex-direction: column;
   gap: 50px;
   padding: 30px 0;
+  background-color: #fbfbfb;
+  border-radius: 50px 50px 0 0;
 }
 .menu .menu__title {
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
   padding: 50px 20px 50px 20px;
-  border-radius: 50px 50px 0 0;
-  background-color: #fcfcfc;
 }
 .menu .menu__title .favorite {
   padding-right: 20px;
 }
-.menu .menu__entrees, .menu .menu__plats, .menu .menu__desserts {
+.menu .menu__dish {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
   gap: 20px;
-  /*.items:nth-child(1) {
-      flex:2;
-  }*/
 }
-.menu .menu__entrees hr, .menu .menu__plats hr, .menu .menu__desserts hr {
+.menu .menu__dish .dish__type hr {
   width: 50px;
   display: flex;
   flex: 0 0 100%;
@@ -303,23 +307,36 @@ hr {
   border-bottom: 5px solid #99e1cf;
   margin: 0;
 }
-.menu .menu__entrees .items, .menu .menu__plats .items, .menu .menu__desserts .items {
+.menu .menu__dish .dish__items {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
   border-radius: 30px;
   box-shadow: 3px 3px 3px #f2f2f2;
+  background-color: white;
   padding: 20px;
 }
-.menu .menu__entrees .items .items__description, .menu .menu__plats .items .items__description, .menu .menu__desserts .items .items__description {
-  width: 90%;
+.menu .menu__dish .dish__items .items__description {
+  max-width: 80%;
 }
-.menu .menu__entrees .items .items__price, .menu .menu__plats .items .items__price, .menu .menu__desserts .items .items__price {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.menu .menu__dish .dish__items .items__price {
+  position: absolute;
+  right: 20px;
+  z-index: 1;
   font-size: 20px;
   font-weight: bold;
   color: #4e4e4e;
+}
+.menu .menu__dish .dish__items .items__check {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  margin: auto;
+  opacity: 0;
+  background-color: #99e1cf;
+  margin: auto;
 }
 .menu .btn {
   align-self: center;
@@ -330,7 +347,6 @@ footer {
   flex-direction: column;
   padding: 20px 0;
   background-color: #4e4e4e;
-  font-size: 21px;
   color: white;
 }
 footer .logo {

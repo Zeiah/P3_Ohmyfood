@@ -9,71 +9,82 @@
 }
 
 .menu {
-
     display: flex;
     flex-direction: column ;
     gap: 50px;
     
     padding: 30px 0;
+    background-color: $color-background-so-light;
+    border-radius: 50px 50px 0 0;
     
-       .menu__title {
+    .menu__title {
         display: flex;
         justify-content: space-between;
         vertical-align: middle;        
-        
         padding: 50px 20px 50px 20px;
-        border-radius: 50px 50px 0 0;
-        background-color: $color-background-so-light;
-        
         .favorite {
             padding-right: 20px;
         } 
     }
 
-    .menu__entrees, .menu__plats, .menu__desserts {
+    .menu__dish {
         display: flex;
         flex-direction: column;
         padding: 0 20px;
         gap: 20px;
 
-        hr {
+        .dish__type {
+           hr {
             width: 50px;
             display: flex;
             flex: 0 0 100%;
             border: none;
             border-bottom: 5px solid $color-tertiary;
             margin: 0;
+            } 
         }
         
-        .items {
+        .dish__items {
             width:100%;
             display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
 
             border-radius: 30px;
             box-shadow: $box-shadow;
+            background-color: white;
             padding: 20px;
 
             .items__description {
-                width: 90%;
+                max-width: 80%;
             }
 
             .items__price {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
+                position: absolute;
+                right: 20px;
+                z-index: 1;
 
                 font-size: 20px;
                 font-weight: bold ;
                 color: $color-font-dark;
             }
-        }
 
-        /*.items:nth-child(1) {
-            flex:2;
-        }*/
+            .items__check {
+                position: absolute;
+                right: 0;
+                z-index: 0;
+                margin:auto;
+                opacity: 0;
+
+                background-color: $color-tertiary;
+                margin: auto;
+            }          
+        }
     }
+
     .btn {
         align-self: center;
     }    
-    }
+}
 

@@ -12,7 +12,9 @@ a {
     color: black;
 }
 
-/* font */
+
+/* FONT-SIZE */
+
 h1 {
     font-size: 25px;
     font-weight: bold;
@@ -40,7 +42,8 @@ h2 {
 h3 {
     font-size: 19px;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 0;
+    padding-bottom: 7px;
 }
 
 p {
@@ -52,4 +55,8 @@ p {
 .stage__instruction, .btn, .searching__bar>span {
     font-size: 19px;
     font-weight: bold;
+}
+
+footer{
+    font-size: 19px;
 }
