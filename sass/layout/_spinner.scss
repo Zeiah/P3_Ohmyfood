@@ -1,0 +1,64 @@
+.spinner {
+    margin:0;
+    padding:0;
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    
+    .loader {
+        background-color: $color-background-light;
+        height: 500px;
+        line-height: 500px;
+        
+        .loader__figure {
+
+            display: inline-block;
+            width : 80px;
+            height: 80px;
+            vertical-align: middle;
+            position: relative;
+
+            border-radius: 50px;
+            border : 6px solid $color-primary-lighten;
+            border-top-color: $color-primary;
+            border-bottom-color: $color-primary;
+            animation: spin 1s linear 0s infinite;
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 5px; left: 5px; right: 5px; bottom: 5px;
+                border-radius: 50px;
+                border: 3px solid $color-secondary-lighten;
+                border-top-color: $color-secondary;
+                border-bottom-color: $color-secondary;
+                animation: spinreverse 5s linear 0s infinite;
+            }
+
+            i {
+                content:"";
+                position: absolute;
+                top: 25px; left: 25px; right: 25px; bottom: 25px;
+                animation: spini 5s ease-out 0s infinite; 
+            }
+                
+            }
+        }   
+    }
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes spinreverse {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+@keyframes spini {
+    0% {transform: scale(0);}
+    80% {transform: scale(1);}
+}

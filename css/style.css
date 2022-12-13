@@ -63,6 +63,78 @@ footer {
   font-size: 19px;
 }
 
+.spinner {
+  margin: 0;
+  padding: 0;
+  font-family: "Shrikhand";
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+.spinner .loader {
+  background-color: #f2f2f2;
+  height: 500px;
+  line-height: 500px;
+}
+.spinner .loader .loader__figure {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid #bc95e9;
+  border-top-color: #9356DC;
+  border-bottom-color: #9356DC;
+  animation: spin 1s linear 0s infinite;
+}
+.spinner .loader .loader__figure::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50px;
+  border: 3px solid #ffc6ef;
+  border-top-color: #FF79DA;
+  border-bottom-color: #FF79DA;
+  animation: spinreverse 5s linear 0s infinite;
+}
+.spinner .loader .loader__figure i {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  animation: spini 5s ease-out 0s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spini {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1);
+  }
+}
 /* header*/
 header {
   display: flex;
@@ -263,10 +335,8 @@ hr {
 .favorite .full:hover {
   opacity: 1;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  background-clip: text;
-  /*-webkit-background-clip: text;*/
-  color: transparent;
-  /*-webkit-text-fill-color: transparent;*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 0.35s;
 }
 
