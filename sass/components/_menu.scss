@@ -54,14 +54,27 @@
 
         .dish__items-front {
             display: flex;
+            flex-direction: row;
             align-items: flex-end;
             justify-content: space-between;
+            width: 100%;
 
             padding: 15px;
+/**/
+text-overflow: ellipsis;
+overflow: hidden;
 
+/**/
             .items__description {
-                overflow: hidden;
                 text-overflow: ellipsis;
+                overflow: hidden;
+                width:auto;
+                white-space: nowrap;
+                h3, p {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }   
             }
 
             .items__price {
@@ -103,11 +116,6 @@
     }
 }
 
-
-.btn {
-    align-self: center;
-    margin-bottom: 20px;
-}
 
 
 @keyframes checking-slide {
