@@ -398,79 +398,73 @@ hr {
 }
 .menu__dish .dish__type hr {
   width: 50px;
-  /*display: flex;
-  flex: 0 0 100%;*/
   border: none;
   border-bottom: 5px solid #99e1cf;
   margin: 0;
 }
-.menu__dish .dish__items {
-  position: relative;
+
+.dish__items {
+  cursor: pointer;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /*height: 90px;*/
   border-radius: 30px;
   box-shadow: 3px 3px 3px #f2f2f2;
   background-color: white;
   overflow: hidden;
-}
-.menu__dish .dish__items .dish__items-front {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-  width: 100%;
-  padding: 15px;
-  /**/
-  text-overflow: ellipsis;
-  overflow: hidden;
-  /**/
   animation: all 1s ease-in-out forwards;
 }
-.menu__dish .dish__items .dish__items-front .items__description {
+.dish__items .items__description,
+.dish__items .items__price {
+  padding: 15px 0 15px 15px;
+}
+.dish__items .items__description {
+  overflow: hidden;
+  flex: 1 1 60%;
+}
+.dish__items .items__description h3,
+.dish__items .items__description p {
   text-overflow: ellipsis;
   overflow: hidden;
-  width: auto;
   white-space: nowrap;
 }
-.menu__dish .dish__items .dish__items-front .items__description h3, .menu__dish .dish__items .dish__items-front .items__description p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.menu__dish .dish__items .dish__items-front .items__price {
+.dish__items .items__price {
+  margin-right: 75px;
   font-size: 18px;
   font-weight: bold;
   color: #4e4e4e;
+  flex: 0 0 20%;
+  padding-right: 20px;
 }
-.menu__dish .dish__items .items__check {
+.dish__items .items__check {
   display: flex;
-  width: 75px;
-  height: 100%;
-  position: absolute;
-  z-index: 0;
-  right: -100px;
-  bottom: 0;
+  height: 80px;
+  margin-right: -80px;
   background-color: #99e1cf;
   opacity: 0;
 }
-.menu__dish .dish__items .items__check i {
+.dish__items .items__check i {
   color: white;
   margin: auto;
 }
-.menu__dish .dish__items:hover .items__check {
+.dish__items:hover .items__check {
   animation: checking-slide 0.7s ease-out forwards;
   transform-origin: left;
 }
-.menu__dish .dish__items:hover .items__check > i {
+.dish__items:hover .items__check > i {
   animation: checking-rotation 0.5s ease-out 0.2s;
 }
 
 @keyframes checking-slide {
   0% {
+    width: 0px;
     transform: translateX(0);
     opacity: 0;
   }
   100% {
-    transform: translateX(-100px);
+    width: 80px;
+    transform: translateX(-80px);
     opacity: 1;
   }
 }
