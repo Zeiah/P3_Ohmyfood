@@ -12,7 +12,7 @@
 
     .resto__card {
         position: relative;
-        height: 270px;
+        height: 250px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -43,7 +43,7 @@
             img {
                 object-fit: cover;
                 object-position: 50% 65%;
-                height: 200px;
+                height: 180px;
                 width: 100%;
             }
         }

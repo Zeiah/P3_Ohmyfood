@@ -14,13 +14,13 @@ a {
 /* FONT-SIZE */
 
 h1 {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     margin: 0;
 }
 
 .subtitle {
-    font-size: 19px;
+    font-size: 17px;
     font-weight:lighter;   
 }
 
@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-size: 18px ;
+    font-size: 16px ;
     font-weight: normal;
     text-transform: uppercase;
     margin: 0;
@@ -38,20 +38,20 @@ h2 {
 
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin: 0;
     padding-bottom: 7px;
 }
 
 p {
-    font-size: 17px;
+    font-size: 14px;
     font-weight: lighter;
     margin: 0;
 }
 
 .stage__instruction, .btn, .searching__bar>span {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -62,11 +62,11 @@ p {
 }
 
 .items__price {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     color: $color-font-dark;
 }
 
 footer {
-    font-size: 18px;
+    font-size: 14px;
 }
