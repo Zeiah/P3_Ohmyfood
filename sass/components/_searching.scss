@@ -7,29 +7,36 @@
         justify-content: center;
         align-items: flex-end;
         background-color: $color-background-light;
-        padding: 20px 0;
+        padding: 15px 0;
 
         i {
             padding: 15px;
         }
 
-        i, span {
+        i,
+        span {
             color: $color-font-dark;
         }
-     }
+    }
 
     .searching__exploration {
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 25px;
+        gap: 20px;
         background-color: $color-background-so-light;
-        padding: 50px 0;
-    
-        h1, .subtitle {
+        padding-top: 40px;
+
+        h1,
+        .subtitle {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .btn {
+            margin-top: 10px;
+            margin-bottom: 60px;
         }
     }
 }

@@ -1,46 +1,44 @@
 .functioning {
     display: flex;
-    flex-direction:column;
-    justify-content:space-between;
-    gap: 50px;
-    padding: 50px 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 20px;
 
     .functioning__stage {
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: flex-start;
-        padding: 40px;
+        padding: 35px;
         position: relative;
         box-shadow: $box-shadow;
         border-radius: 50px;
         background-color: $color-background-so-light;
-    
 
         .stage__number {
             background: $color-primary;
-            font-size: 15px;
-            padding: 5px 10px ;
-            color: white;
+            padding: 5px 10px;
             border-radius: 50px;
             position: absolute;
             left: -5px;
         }
-        
+
         .stage__icone {
-            color:$color-font-light;
+            color: $color-font-light;
             position: absolute;
             left: 45px;
         }
-        
+
         .stage__instruction {
             position: absolute;
             left: 90px;
         }
-        
+
         &:hover {
             .stage__icone {
-                color:$color-primary;
+                color: $color-primary;
             }
+
             background-color: $color-primary-so-light ;
         }
     }

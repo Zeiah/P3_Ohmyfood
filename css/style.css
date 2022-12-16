@@ -6,8 +6,6 @@
 }
 
 body {
-  min-width: 350px;
-  max-width: 720px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -25,7 +23,7 @@ h1 {
 }
 
 .subtitle {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: lighter;
 }
 
@@ -34,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
@@ -42,25 +40,37 @@ h2 {
 }
 
 h3 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
   margin: 0;
   padding-bottom: 7px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: lighter;
   margin: 0;
 }
 
 .stage__instruction, .btn, .searching__bar > span {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
 }
 
+.stage__number {
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+
+.items__price {
+  font-size: 17px;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+
 footer {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 /* header*/
@@ -84,7 +94,7 @@ header .header__logo {
   padding: 20px 0;
 }
 header .header__logo > img {
-  width: 65%;
+  width: 58%;
   margin: auto;
   padding-left: 15%;
 }
@@ -194,40 +204,46 @@ hr {
   justify-content: center;
   align-items: flex-end;
   background-color: #f2f2f2;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 .searching .searching__bar i {
   padding: 15px;
 }
-.searching .searching__bar i, .searching .searching__bar span {
+.searching .searching__bar i,
+.searching .searching__bar span {
   color: #4e4e4e;
 }
 .searching .searching__exploration {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
   background-color: #fbfbfb;
-  padding: 50px 0;
+  padding-top: 40px;
 }
-.searching .searching__exploration h1, .searching .searching__exploration .subtitle {
+.searching .searching__exploration h1,
+.searching .searching__exploration .subtitle {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.searching .searching__exploration .btn {
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 
 .functioning {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 50px;
-  padding: 50px 20px;
+  gap: 40px;
+  padding: 60px 20px;
 }
 .functioning .functioning__stage {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 40px;
+  padding: 35px;
   position: relative;
   box-shadow: 3px 3px 3px #f2f2f2;
   border-radius: 50px;
@@ -235,9 +251,7 @@ hr {
 }
 .functioning .functioning__stage .stage__number {
   background: #9356DC;
-  font-size: 15px;
   padding: 5px 10px;
-  color: white;
   border-radius: 50px;
   position: absolute;
   left: -5px;
@@ -263,7 +277,7 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  padding: 50px 20px 70px 20px;
+  padding: 60px 20px 60px 20px;
   background-color: #fbfbfb;
 }
 .resto h1 {
@@ -271,10 +285,9 @@ hr {
 }
 .resto .resto__card {
   position: relative;
-  height: 300px;
+  height: 270px;
   display: flex;
   flex-direction: column;
-  column-gap: 20px;
   justify-content: center;
   box-shadow: 3px 3px 3px #f2f2f2;
   border-radius: 15px;
@@ -283,27 +296,27 @@ hr {
 .resto .resto__card .card__img {
   display: flex;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 0;
 }
 .resto .resto__card .card__img p {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   z-index: 1;
   background-color: #99e1cf;
   color: #06a37c;
   font-weight: bold;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 10px;
 }
 .resto .resto__card .card__img img {
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: 50% 65%;
+  height: 200px;
   width: 100%;
-  height: 250px;
 }
 .resto .resto__card .card__text {
   position: absolute;
@@ -313,21 +326,21 @@ hr {
   background-color: white;
   display: flex;
   justify-content: flex-start;
-  padding: 15px;
+  padding: 10px;
 }
 .resto .resto__card .card__text .card__text__name {
   flex: 2;
 }
 .resto .resto__card .card__text .favorite {
-  padding: 10px 50px 50px 0;
+  padding: 10px 40px 40px 0;
 }
 
 .btn {
-  width: 55%;
+  width: 60%;
   color: white;
   background-image: linear-gradient(#FF79DA 35%, #bc95e9);
   border-radius: 50px;
-  padding: 15px 25px;
+  padding: 15px 15px;
   border: none;
 }
 .btn:hover {
@@ -339,10 +352,6 @@ hr {
 .menu .btn {
   align-self: center;
   margin-bottom: 20px;
-}
-
-.searching__exploration > .btn {
-  margin-top: 20px;
 }
 
 .favorite {
@@ -367,27 +376,31 @@ hr {
 }
 
 .banner img {
-  height: 300px;
+  height: 350px;
   width: 100%;
   object-fit: cover;
 }
 
 .menu {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  padding: 30px 0;
+  justify-content: space-between;
+  gap: 40px;
   background-color: #fbfbfb;
-  border-radius: 50px 50px 0 0;
+  margin-top: -50px;
+  border-radius: 30px 30px 0 0;
+  overflow: hidden;
 }
 .menu .menu__title {
   display: flex;
   justify-content: space-between;
-  vertical-align: middle;
-  padding: 50px 20px 50px 20px;
+  background-color: #fbfbfb;
+  border-radius: 50px 50px 0 0;
+  padding: 30px 20px 0 20px;
 }
 .menu .menu__title .favorite {
-  padding-right: 20px;
+  padding-right: 60px;
 }
 
 .menu__dish {
@@ -408,7 +421,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  /*height: 90px;*/
   border-radius: 30px;
   box-shadow: 3px 3px 3px #f2f2f2;
   background-color: white;
@@ -430,10 +442,9 @@ hr {
   white-space: nowrap;
 }
 .dish__items .items__price {
+  display: flex;
+  justify-content: flex-end;
   margin-right: 75px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #4e4e4e;
   flex: 0 0 20%;
   padding-right: 20px;
 }
@@ -456,6 +467,95 @@ hr {
   animation: checking-rotation 0.5s ease-out 0.2s;
 }
 
+.entrees .dish__type {
+  animation: menu-appear 0.25s ease-in-out 0s both;
+  transform-origin: top;
+}
+.entrees .one {
+  animation: menu-appear 0.25s ease-in-out 0.25s both;
+  transform-origin: top;
+}
+.entrees .two {
+  animation: menu-appear 0.25s ease-in-out 0.5s both;
+  transform-origin: top;
+}
+.entrees .three {
+  animation: menu-appear 0.25s ease-in-out 0.75s both;
+  transform-origin: top;
+}
+.entrees .four {
+  animation: menu-appear 0.25s ease-out 1s both;
+  transform-origin: top;
+}
+
+.plats .dish__type {
+  animation: menu-appear 0.25s ease-in-out 1s both;
+  transform-origin: top;
+}
+.plats .one {
+  animation: menu-appear 0.25s ease-in-out 1.25s both;
+  transform-origin: top;
+}
+.plats .two {
+  animation: menu-appear 0.25s ease-in-out 1.5s both;
+  transform-origin: top;
+}
+.plats .three {
+  animation: menu-appear 0.25s ease-in-out 1.75s both;
+  transform-origin: top;
+}
+
+.desserts .dish__type {
+  animation: menu-appear 0.25s ease-in-out 2s both;
+  transform-origin: top;
+}
+.desserts .one {
+  animation: menu-appear 0.25s ease-in-out 2.25s both;
+  transform-origin: top;
+}
+.desserts .two {
+  animation: menu-appear 0.25s ease-in-out 2.5s both;
+  transform-origin: top;
+}
+.desserts .three {
+  animation: menu-appear 0.25s ease-in-out 2.75s both;
+  transform-origin: top;
+}
+
+.plats--bis .dish__type {
+  animation: menu-appear 0.25s ease-in-out 1.25s both;
+  transform-origin: top;
+}
+.plats--bis .one {
+  animation: menu-appear 0.25s ease-in-out 1.5s both;
+  transform-origin: top;
+}
+.plats--bis .two {
+  animation: menu-appear 0.25s ease-in-out 1.75s both;
+  transform-origin: top;
+}
+.plats--bis .three {
+  animation: menu-appear 0.25s ease-in-out 2s both;
+  transform-origin: top;
+}
+
+.desserts--bis .dish__type {
+  animation: menu-appear 0.25s ease-in-out 2.25s both;
+  transform-origin: top;
+}
+.desserts--bis .one {
+  animation: menu-appear 0.25s ease-in-out 2.5s both;
+  transform-origin: top;
+}
+.desserts--bis .two {
+  animation: menu-appear 0.25s ease-in-out 2.75s both;
+  transform-origin: top;
+}
+.desserts--bis .three {
+  animation: menu-appear 0.25s ease-in-out 3s both;
+  transform-origin: top;
+}
+
 @keyframes checking-slide {
   0% {
     width: 0px;
@@ -474,6 +574,14 @@ hr {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes menu-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 footer {

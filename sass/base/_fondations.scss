@@ -1,8 +1,6 @@
 * {box-sizing: border-box;}
 
 body {
-    min-width: 350px;
-    max-width: 720px;
     font-family:'Roboto', sans-serif;
 }
 
@@ -22,7 +20,7 @@ h1 {
 }
 
 .subtitle {
-    font-size: 21px;
+    font-size: 19px;
     font-weight:lighter;   
 }
 
@@ -31,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-size: 20px ;
+    font-size: 18px ;
     font-weight: normal;
     text-transform: uppercase;
     margin: 0;
@@ -40,23 +38,35 @@ h2 {
 
 
 h3 {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
     padding-bottom: 7px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: lighter;
     margin: 0;
 }
 
 .stage__instruction, .btn, .searching__bar>span {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: bold;
 }
 
-footer{
-    font-size: 19px;
+.stage__number {
+    font-size: 13px;
+    font-weight: bold;
+    color:white;
+}
+
+.items__price {
+    font-size: 17px;
+    font-weight: bold;
+    color: $color-font-dark;
+}
+
+footer {
+    font-size: 18px;
 }

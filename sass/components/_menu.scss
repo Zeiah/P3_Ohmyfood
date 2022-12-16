@@ -1,28 +1,31 @@
 .banner {
     img {
-        height: 300px;
+        height: 350px;
         width: 100%;
         object-fit: cover;
     }
 }
 
 .menu {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-
-    padding: 30px 0;
+    justify-content: space-between;
+    gap: 40px;
     background-color: $color-background-so-light;
-    border-radius: 50px 50px 0 0;
+    margin-top: -50px;
+    border-radius: 30px 30px 0 0;
+    overflow:hidden;
+    
 
     .menu__title {
         display: flex;
         justify-content: space-between;
-        vertical-align: middle;
-        padding: 50px 20px 50px 20px;
-
+        background-color: $color-background-so-light;
+        border-radius: 50px 50px 0 0;
+        padding: 30px 20px 0 20px;
         .favorite {
-            padding-right: 20px;
+            padding-right: 60px;
         }
     }
 }
@@ -48,8 +51,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
-    /*height: 90px;*/
     border-radius: 30px;
     box-shadow: $box-shadow;
     background-color: white;
@@ -73,10 +74,9 @@
     }
 
     .items__price {
+        display: flex;
+        justify-content: flex-end;
         margin-right: 75px;
-        font-size: 18px;
-        font-weight: bold;
-        color: $color-font-dark;
         flex: 0 0 20%;
         padding-right: 20px;
     }
@@ -109,6 +109,121 @@
 }
 
 
+.entrees {
+    .dish__type {
+        animation: menu-appear 0.25s ease-in-out 0s both;
+        transform-origin: top;
+    }
+
+    .one {
+        animation: menu-appear 0.25s ease-in-out 0.25s both;
+        transform-origin: top;
+    }
+
+    .two {
+        animation: menu-appear 0.25s ease-in-out 0.5s both;
+        transform-origin: top;
+    }
+
+    .three {
+        animation: menu-appear 0.25s ease-in-out 0.75s both;
+        transform-origin: top;
+    }
+    .four {
+        animation: menu-appear 0.25s ease-out 1s both;
+        transform-origin: top;
+    }
+}
+
+.plats {
+    .dish__type {
+        animation: menu-appear 0.25s ease-in-out 1s both;
+        transform-origin: top;
+    }
+
+    .one {
+        animation: menu-appear 0.25s ease-in-out 1.25s both;
+        transform-origin: top;
+    }
+
+    .two {
+        animation: menu-appear 0.25s ease-in-out 1.5s both;
+        transform-origin: top;
+    }
+
+    .three {
+        animation: menu-appear 0.25s ease-in-out 1.75s both;
+        transform-origin: top;
+    }
+}
+
+.desserts {
+    .dish__type {
+        animation: menu-appear 0.25s ease-in-out 2s both;
+        transform-origin: top;
+    }
+
+    .one {
+        animation: menu-appear 0.25s ease-in-out 2.25s both;
+        transform-origin: top;
+    }
+
+    .two {
+        animation: menu-appear 0.25s ease-in-out 2.50s both;
+        transform-origin: top;
+    }
+
+    .three {
+        animation: menu-appear 0.25s ease-in-out 2.75s both;
+        transform-origin: top;
+    }
+}
+
+.plats--bis {
+    .dish__type {
+        animation: menu-appear 0.25s ease-in-out 1.25s both;
+        transform-origin: top;
+    }
+
+    .one {
+        animation: menu-appear 0.25s ease-in-out 1.5s both;
+        transform-origin: top;
+    }
+
+    .two {
+        animation: menu-appear 0.25s ease-in-out 1.75s both;
+        transform-origin: top;
+    }
+
+    .three {
+        animation: menu-appear 0.25s ease-in-out 2s both;
+        transform-origin: top;
+    }
+} 
+
+.desserts--bis {
+    .dish__type {
+        animation: menu-appear 0.25s ease-in-out 2.25s both;
+        transform-origin: top;
+    }
+
+    .one {
+        animation: menu-appear 0.25s ease-in-out 2.5s both;
+        transform-origin: top;
+    }
+
+    .two {
+        animation: menu-appear 0.25s ease-in-out 2.75s both;
+        transform-origin: top;
+    }
+
+    .three {
+        animation: menu-appear 0.25s ease-in-out 3s both;
+        transform-origin: top;
+    }
+}
+
+
 @keyframes checking-slide {
     0% {
         width: 0px;
@@ -130,5 +245,15 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes menu-appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1
     }
 }
