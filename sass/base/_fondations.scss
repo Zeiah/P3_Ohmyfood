@@ -2,6 +2,7 @@
 
 body {
     font-family:'Roboto', sans-serif;
+    min-width: 360px;
 }
 
 a {
@@ -14,13 +15,13 @@ a {
 /* FONT-SIZE */
 
 h1 {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: bold;
     margin: 0;
 }
 
 .subtitle {
-    font-size: 17px;
+    font-size: 18px;
     font-weight:lighter;   
 }
 
@@ -51,7 +52,7 @@ p {
 }
 
 .stage__instruction, .btn, .searching__bar>span {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
 }
 

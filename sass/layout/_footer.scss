@@ -1,11 +1,14 @@
 footer {
     display: flex;
     flex-direction: column;
-
     padding: 20px 0;
-
     background-color: $color-background-dark;
     color : white;
+
+    @media (min-width: 720px) {
+        align-items: center;
+        margin: auto;
+    }
 
     .logo {
         font-family: 'Shrikhand';
