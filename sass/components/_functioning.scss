@@ -4,17 +4,27 @@
     justify-content: space-between;
     gap: 40px;
     padding: 60px 20px;
+   
+    @media (min-width: 720px) {
+        width: 60%;
+        margin: auto;
+    }
+
+    @media (min-width: 992px) {
+        width: 40%;
+    }
 
     .functioning__stage {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 35px;
+        padding: 25px;
         position: relative;
         box-shadow: $box-shadow;
         border-radius: 50px;
         background-color: $color-background-so-light;
-
+        
+       
         .stage__number {
             background: $color-primary;
             padding: 5px 10px;
