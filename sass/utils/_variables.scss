@@ -7,7 +7,8 @@ $color-tertiary: #99e1cf;
 $color-tertiary-font: #06a37c;
 
 /* couleur bouton*/
-$background-radient-secondary: linear-gradient($color-secondary 35%, $color-primary-lighten);
+$background-radient-secondary: linear-gradient($color-secondary 35%, $color-primary);
+$background-radient-secondary-light: linear-gradient($color-secondary-lighten 35%, $color-primary-lighten);
 $color-heart: linear-gradient(0deg, $color-primary, $color-secondary);
 
 /* couleur fond */
