@@ -118,7 +118,7 @@ header hr {
   font-size: 30px;
   color: black;
   text-align: center;
-  animation: spinner-ending 2.5s ease-out 2s forwards;
+  animation: spinner-ending 2.5s ease-out 1s forwards;
   transform-origin: bottom;
 }
 .spinner .loader {
@@ -388,7 +388,7 @@ header hr {
 
 .btn {
   color: white;
-  background-image: linear-gradient(#FF79DA 35%, #bc95e9);
+  background-image: linear-gradient(#FF79DA 35%, #9356DC);
   border-radius: 50px;
   padding: 15px 15px;
   border: none;
@@ -398,6 +398,8 @@ header hr {
   transform: scale(1.15);
   transition: transform 500ms;
   box-shadow: 1px 1px 5px #4e4e4e;
+  background-image: linear-gradient(#ffc6ef 35%, #bc95e9);
+  color: #9356DC;
 }
 
 .favorite {
