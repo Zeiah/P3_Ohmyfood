@@ -2,16 +2,14 @@
     color: white;
     background-image: $background-radient-secondary;
     border-radius: 50px;
+    box-shadow: $box-shadow;
     padding: 15px 15px;
     border: none;
     width: max-content;
 
     &:hover {
-        transform: scale(1.15);
-        transition: transform 500ms;
         box-shadow: 1px 1px 5px $color-background-dark;
-        background-image: $background-radient-secondary-light;
-        color: $color-primary;  
+        background-image: $background-radient-secondary-light; 
     }
 }
 

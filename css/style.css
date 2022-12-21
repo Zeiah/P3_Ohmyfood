@@ -390,16 +390,14 @@ header hr {
   color: white;
   background-image: linear-gradient(#FF79DA 35%, #9356DC);
   border-radius: 50px;
+  box-shadow: 3px 3px 3px #f2f2f2;
   padding: 15px 15px;
   border: none;
   width: max-content;
 }
 .btn:hover {
-  transform: scale(1.15);
-  transition: transform 500ms;
   box-shadow: 1px 1px 5px #4e4e4e;
-  background-image: linear-gradient(#ffc6ef 35%, #bc95e9);
-  color: #9356DC;
+  background-image: linear-gradient(#ff93e1 35%, #a16be0);
 }
 
 .favorite {
